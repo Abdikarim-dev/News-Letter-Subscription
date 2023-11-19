@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: serif;
+    background-color: #7c3af8;
+}
+.button{
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    color: #5c4800;
+    /* position: relative;
+    display: inline-block; */
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover{
+    letter-spacing: 0.1rem;
+}
+#newsLetter{ 
+    position: fixed;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: 0.5s;
+    width: 450px;
+    padding: 80px 50px 50px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    visibility: hidden;
+}
+#newsLetter.active{
+    visibility: visible;
+    top: 50%;
+}
+#newsLetter h2{
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 24px;
+    color: #5c4800;
+}
+#newsLetter .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#newsLetter p{
+    text-align: center;
+    color: #5c4800;
+}
+input , button {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    font-size: 1rem;
+    font-family: serif;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+button{
+    border: none;
+    background-color: #7c3af8;
+    color: #fff;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+}
